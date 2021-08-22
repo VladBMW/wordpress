@@ -26,14 +26,13 @@
             </div>
             <div class="col-11">
               
-             <nav>
-               <ul>
-                 
-                <a href="home"><li class="nav nav-about">HOME</li></a>
-                <a href="about"><li  class="nav home nav-about">ABOUT</li></a>
-                <a href="contact"><li  class="nav nav-about">CONTACT</li></a>
-              </ul>
-            </nav>
+            <?php
+          wp_nav_menu([
+            "theme_location" => "top_menu2",
+            "container" => "div",
+            'menu_class'      => 'menu', 
+          ]);
+        ?>
             </div>
           </div>
           

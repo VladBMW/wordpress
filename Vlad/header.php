@@ -25,34 +25,15 @@
         </div>
         <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 navigation">
          
-         <nav >
-           <ul>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-               <div class="menu-of-header up"></div>
-               <div class="menu-of-header medium"></div>
-               <div class="menu-of-header down"></div>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="home">HOME</a></li>
-                <li><a class="dropdown-item" href="about">ABOUT</a></li>
-                <li><a class="dropdown-item" href="#">WORK</a></li>
-                <li><a class="dropdown-item" href="#">PROCESS</a></li>
-                <li><a class="dropdown-item" href="#">SERVICES</a></li>
-                <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
-                <li><a class="dropdown-item" href="contact">CONTACT</a></li>
-              </ul>
-            </div>
-             
-            <a href="home"><li class="nav">HOME</li></a>
-            <a href="about"><li  class="nav">ABOUT</li></a>
-            <a href=""><li  class="nav">WORK</li></a>
-            <a href=""> <li  class="nav">PROCESS</li></a>
-            <a href=""><li  class="nav">SERVICES</li></a>
-            <a href=""><li  class="nav">TESTIMONIALS</li></a>
-            <a href="contact"><li  class="nav">CONTACT</li></a>
-          </ul>
-        </nav>
+        
+
+        <?php
+          wp_nav_menu([
+            "theme_location" => "top_menu",
+            "container" => "div",
+            'menu_class'      => 'menu', 
+          ]);
+        ?>
         </div>
       </div>
       <div class="row">

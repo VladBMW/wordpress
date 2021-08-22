@@ -20,7 +20,7 @@ header{
     background-size: cover;
    
 }
-nav{
+.menu{
     float: right;
 }
 /* kkkk */
@@ -30,20 +30,26 @@ textarea {
    } 
 
 
-.nav{
+.menu-item{
     display: inline-block !important;
     margin-left: 35px;
     margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 24pt;
-    font-size: 12pt;
+    font-size: 16pt;
+
+}
+
+.menu-item>a{
     color: #272727;
+    text-decoration: none;
 }
-.nav:hover{
+.menu-item>a:hover{
     color: #10c9c3;
-    
+    text-decoration: none;
 }
+
 .Mainlogo{
     margin-top: 40px;
   

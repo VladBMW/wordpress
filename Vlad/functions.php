@@ -11,4 +11,14 @@ add_action("wp_footer" , "link_script");
               wp_enqueue_script("main" , get_template_directory_uri() . "/js/script.js");
           }
 
+add_action("after_setup_theme" , "register_menu");
+          function register_menu(){
+            register_nav_menu("top_menu" , "Меню в шапке");
+            register_nav_menu("top_menu2" , "Меню в шапке 2");
+            add_theme_support("title-tag");
+          } 
+          
+
+          
+
 ?>
